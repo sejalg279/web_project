@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym project</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("gym2.jpg");
+            color: white;
+        }
+
+        .left {
+            display: inline-block;
+            border: 2 px solid rgb(205, 90, 100);
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            font-style: italic;
+        }
+
+        .right {
+            display: inline-block;
+            border: 2 px solid rgb(174, 205, 90);
+            position: absolute;
+            right: 34px;
+            top: 43px;
+        }
+
+        .mid {
+            display: block;
+            width: 36%;
+            margin: 29px auto;
+            border: 2px solid red;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: rgb(9, 98, 114);
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .left div {
+            font-style: italic;
+            text-align: center;
+            color: crimson;
+        }
+
+        .btn {
+            padding: 15px;
+            margin: 3px;
+            border: 1px solid black;
+            font-size: 25px;
+            border-radius: 10px;
+            font-style: italic;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: salmon;
+        }
+
+        .container {
+            display: inline-block;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="symbol.jpg" alt="error">
+            <div>
+                MY FITNESS
+            </div>
+        </div>
+        <!-- for nvigation -->
+        <nav>
+            <div class="mid">
+                <ul class="navbar">
+                    <li> <a href="#" class="active">HOME</a></li>
+                    <li> <a href="#">ABOUT</a></li>
+                    <li> <a href="#">FITNESS </a></li>
+                    <li> <a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            
+                    </nav>
+        <!-- buttons -->
+        <div class="right">
+            <button class="btn"> Call us</button>
+            <button class="btn"> E-mail us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym now...</h1>
+        <form action="https://www.flipkart.com/camera-clp-store">
+            <label for="name">Name:</label>
+            <div>
+                <input type="text" name="Myname" placeholder="Enter your name" id="name">
+            </div><br>
+            <div>
+                Email: <input type="email" name="Myemail" placeholder="Enter your Email">
+            </div><br>
+            <div>
+                Number: <input type="number" name="Mynumber" placeholder="Enter your number">
+            </div><br>
+            <div>
+                Date and year: <input type="date" name="Date" placeholder="Enter date & year">
+            </div><br>
+            <div>
+                Address: <textarea name="Address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+            </div><br>
+            <div>
+                Are you eligible: <input type="checkbox" name="myeligiblity" checked>
+            </div><br>
+            <div>
+                Gender: <input type="checkbox" name="mygender">Male<input type="checkbox" name="mygender">Female<input
+                    type="checkbox" name="mygender">Other </div><br>
+            <!-- name is same for 1 selection -->
+            <div>
+                Tea: <input type="radio" name="mydrink"> Coffee:<input type="radio" name="mydrink">
+            </div><br>
+            <label for="cars">Cars:</label>
+            <select name="mycars" id="cars">
+                <option value="swift"> Swift</option>
+                <option value="X">X-max</option>
+            </select><br><br>
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+</body>
+
+</html>
