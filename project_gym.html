@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <style>
+        .header {
+            display: flexbox;
+        }
+
+        nav {
+            position: fixed;
+            background-color: bisque;
+            border-radius: 30px;
+            width: 100%;
+            display: inline;
+            top: 8px;
+        }
+
+        body {
+            background-color: lavender;
+            flex-wrap: wrap-reverse;
+        }
+
+        img {
+            height: 80px;
+            width: 90px;
+            box-shadow: 10px 10px 8px black;
+        }
+
+        .right {
+            position: fixed;
+            top: 40px;
+            right: 22px;
+        }
+
+        .mid {
+            display: inline-block;
+        }
+
+        .mid li {
+            display: inline-flex;
+            padding: 15px;
+            text-align: center;
+            list-style-type: none;
+            font-size: 25px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        head {
+            clear: both;
+            width: 75%;
+            margin: auto;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: underline;
+            margin-top: 100px;
+            text-shadow: 2px 2px grey;
+        }
+
+        H3 {
+            list-style-type: disc;
+        }
+
+        .gymphoto {
+            float: right;
+        }
+
+        .gymphoto img {
+            margin: 22px;
+            height: 450px;
+            width: 400px;
+            margin-top: 150px;
+        }
+
+        .largeimg img {
+            display: inline-flex;
+            align-content: space-around;
+            overflow: auto;
+            margin: 35px;
+            height: auto;
+            width: auto;
+        }
+
+        img:hover {
+            opacity: 0.5;
+        }
+
+        .types {
+            margin: auto;
+            height: 350px;
+            width: 40%;
+            padding: 22px;
+            border: 1px solid black;
+            border-radius: 20px;
+            background-color: antiquewhite;
+            float: left;
+        }
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .types li {
+            padding: 12px;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .types li:hover {
+            text-decoration: black underline;
+        }
+
+        .types li dd {
+            padding: 5px;
+        }
+
+        .table {
+            float: right;
+            flex-direction: row;
+            border: 2px solid black;
+            background-color: aquamarine;
+
+        }
+
+        .table th,
+        td {
+            padding: 10px;
+            border: 1px solid black;
+
+        }
+
+        .notice {
+            float: right;
+            margin-bottom: 60px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-right: 170px;
+            background: antiquewhite;
+            padding: 22px;
+            
+        }
+
+        .notice ul li {
+            list-style-type: disc;
+        }
+
+        .form {
+            margin-top: 500px;
+            width: 40%;
+            height: fit-content;
+            clear: both;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 22px;
+            margin-top: 50px;
+            background-color: aquamarine;
+        }
+
+        input {
+            padding: 6px;
+            margin: 10px;
+            border: 1px solid black;
+            width: 300px;
+        }
+
+        input:hover {
+            background-color: burlywood;
+        }
+
+        label {
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: larger;
+        }
+
+        textarea:hover {
+            background-color: burlywood;
+        }
+
+        .check {
+            margin-top: 22px;
+        }
+        p{
+            font-size: 22px;
+        }
+        .check input {
+            padding: 0px;
+            margin: 0px;
+            width: fit-content;
+            margin: 22px;
+        }
+
+        .submit {
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+            width: fit-content;
+        }
+
+        button {
+            margin: 8px;
+            padding: 12px 30px;
+            border: 1px solid black;
+            border-radius: 16px;
+        }
+
+        button:hover {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul class="mid">
+                <li> <a href="gift.jpg"> Home </a></li>
+                <li><a href="gift.jpg">About us</a></li>
+                <li><a href="gift.jpg">Contact us</a></li>
+                <li> <a href="gift.jpg">Services</a></li>
+            </ul>
+            <div class="right">
+                <input type="search" name="search here" placeholder="Search here">
+            </div>
+        </nav>
+
+    </header>
+    <div class="gymphoto">
+        <img src="gym2.jpg">
+    </div>
+    <div class="head">
+        <div class="fitclub">
+
+            <h1>FITNESS CLUB</h1>
+            <h3>OUR GOLES:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolores ex totam praesentium impedit
+                cupiditate ut,
+                illo aut assumenda consequatur aperiam libero itaque ducimus excepturi reprehenderit. Harum eius cumque
+                debitis
+                qui tempore voluptatem assumenda quaerat dolore quidem eaque consequuntur, saepe aut id rerum quasi.
+                Animi ex
+                adipisci, odit quisquam suscipit quo vero. Nulla totam eaque fugit voluptas accusantium voluptate.
+                Nostrum
+                blanditiis nam nihil dignissimos neque maiores iure.</p>
+            <h3>OUR WORKOUTS & DIETS:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolores ex totam praesentium impedit
+                cupiditate ut,
+                illo aut assumenda consequatur aperiam libero itaque ducimus excepturi reprehenderit. Harum eius cumque
+                debitis
+                qui tempore voluptatem assumenda quaerat dolore quidem eaque consequuntur, saepe aut id rerum quasi.
+                Animi ex
+                adipisci, odit quisquam suscipit quo vero. Nulla totam eaque fugit voluptas accusantium voluptate.
+                Nostrum
+                blanditiis nam nihil dignissimos neque maiores iure.</p>
+            <h3>OUR ACHEIVMENTS:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolores ex totam praesentium impedit
+                cupiditate ut,
+                illo aut assumenda consequatur aperiam libero itaque ducimus excepturi reprehenderit. Harum eius cumque
+                debitis
+                qui tempore voluptatem assumenda quaerat dolore quidem eaque consequuntur, saepe aut id rerum quasi.
+                Animi ex
+                adipisci, odit quisquam suscipit quo vero. Nulla totam eaque fugit voluptas accusantium voluptate.
+                Nostrum
+                blanditiis nam nihil dignissimos neque maiores iure.</p>
+            <h3>OUR SERVICES:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est dolores ex totam praesentium impedit
+                cupiditate ut,
+                illo aut assumenda consequatur aperiam libero itaque ducimus excepturi reprehenderit. Harum eius cumque
+                debitis
+                qui tempore voluptatem assumenda quaerat dolore quidem eaque consequuntur, saepe aut id rerum quasi.
+                Animi ex
+                adipisci, odit quisquam suscipit quo vero. Nulla totam eaque fugit voluptas accusantium voluptate.
+                Nostrum
+                blanditiis nam nihil dignissimos neque maiores iure.</p>
+
+        </div>
+    </div>
+    <div class="largeimg">
+        <h1>OUR TRAININGS</h1>
+        <img src="gift.jpg" alt="">
+        <img src="gift1.jpg" alt="">
+        <img src="gift2.jpg" alt="">
+        <img src="gift3.jpg" alt="">
+    </div>
+    <div class="types">
+        <h3>OUR WORKOUTS</h3>
+        <ol>
+            <li>Cardio:</li>
+            <dd>Aerobic & anaerobic exercise</dd>
+            <li>Weight-training:</li>
+            <dd>Weight lifting,strength training</dd>
+            <li>Yoga:</li>
+            <dd>Fly yoga,meditations</dd>
+            <li>Pilities:</li>
+            <dd>Aerobic & anaerobic exercise</dd>
+        </ol>
+    </div>
+    <div class="table">
+        <h3 style="text-decoration: underline;">OUR TIME & DAYS</h3>
+        <table>
+            <tr>
+                <th>Exercise</th>
+                <th>Cardio</th>
+                <th>Weight-training</th>
+                <th>Yoga</th>
+                <th>Pilities</th>
+            </tr>
+            <tr>
+                <th>Days</th>
+                <th>
+                    <ol>
+                        <li>Monday</li>
+                        <li>Wednusday</li>
+                        <li>Thursday</li>
+                        <li>Saturday</li>
+                    </ol>
+                </th>
+                <th>
+                    <ol>
+                        <li>Tuesday</li>
+                        <li>Wednusday</li>
+                        <li>Friday</li>
+                        <li>Saturday</li>
+                    </ol>
+                </th>
+                <th>
+                    <ol>
+                        <li>Monday</li>
+                        <li>Wednusday</li>
+                        <li>Thursday</li>
+                        <li>Saturday</li>
+                    </ol>
+                </th>
+                <th>
+                    <ol>
+                        <li>Tuesday</li>
+                        <li>Wednusday</li>
+                        <li>Friday</li>
+                        <li>Saturday</li>
+                    </ol>
+                </th>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td>6 A.M - 7 A.M.</td>
+                <td>6:30 A.M - 8 A.M.</td>
+                <td>7 A.M - 8 A.M.</td>
+                <td>8 A.M - 9 A.M.</td>
+            </tr>
+        </table>
+    </div>
+    <div class="notice">
+        <h4 style="font-size: 30px;">Notics:</h4>
+        <ul>
+            <li>
+                <p>Lorem ipsum dolor sit amet taque ullam minima perferendis</p>
+            </li>
+            <li>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, expedita!</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing e.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="form">
+        <h3 style="text-decoration: underline;">PERSONAL INFORMATION</h3>
+        <form action="https://maps.google.com/">
+            <label for="name">Name:</label>
+            <input type="name" name="myname" id="name"><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="password">Password:</label>
+            <input type="password" name="mypassword" id="password"><br>
+            <label for="number">Number:</label>
+            <input type="number" name="number" id="number"><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="mydob" id="dob"><br>
+            <label for="address">Address:</label>
+            <textarea name="myaddress" id="address" cols="40" rows="5" style="border: 1px solid black;"></textarea><br>
+
+            <div class="check">
+                <label for="eligible">Are you eligible?:</label>
+                <input type="checkbox" name="myeligibility" id="eligible" checked><br>
+                <label for="gender">Gender:</label>
+                Male:<input type="radio" name="gender" id="gender">Female:<input type="radio" name="gender"
+                    id="gender">Other:<input type="radio" name="gender" id="gender"><br>
+            </div>
+            <div class="option">
+                <label for="exercise">Type of exercise:</label>
+                <select name="exercise" id="exer">
+                    <option value="Cardio">Cardio</option>
+                    <option value="Weight-training">Weight-training</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Pilities">Pilities</option>
+                </select>
+            </div><br>
+            <label for="time">Enter Time:</label>
+            <input type="time" name="mytime" id="time">
+            <div class="submit">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+    </div>
+    </form>
+   
+</body>
+
+</html>
+
+
+
